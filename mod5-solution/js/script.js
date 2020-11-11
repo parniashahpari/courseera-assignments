@@ -93,7 +93,7 @@ $(function () {
     // Load home snippet page
     $ajaxUtils.sendGetRequest(
       homeHtmlUrl,
-      function (homeHtml) {
+      function (homeHtmlUrl) {
         var chosenCategoryShortName = chooseRandomCategory(categories)
           .short_name;
 
@@ -113,7 +113,7 @@ $(function () {
         // it into the home html snippet.
         //
         var homeHtmlToInsertIntoMainPage = insertProperty(
-          homehtml,
+          homeHtmlUrl,
           "randomCategoryShortname",
           ` " ${chosenCategoryShortName} " `
         );
