@@ -114,8 +114,8 @@ $(function () {
         //
         var homeHtmlToInsertIntoMainPage = insertProperty(
           homeHtmlUrl,
-          "randomCategoryShortname",
-          ` " ${chosenCategoryShortName} " `
+          "randomCategoryShortName",
+          ` '${chosenCategoryShortName}' `
         );
         insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
